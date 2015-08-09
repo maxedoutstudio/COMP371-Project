@@ -1,0 +1,87 @@
+﻿Build started 8/8/2015 1:04:14 PM.
+     1>Project "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\Assignment1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"../ThirdParty/DevIL/DevILx86-1.7.8/include" /I../ThirdParty/assimp/include /I"../ThirdParty/FreeImage-3170/Source" /I"../ThirdParty/glew-1.10.0/include" /I"../ThirdParty/glfw-3.0.4/include" /I../ThirdParty/glm /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/" /Fd"C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Source\Animation.cpp ..\Source\Billboard.cpp ..\Source\Camera.cpp ..\Source\ChairModel.cpp ..\Source\FirstPersonCamera.cpp ..\Source\mesh.cpp ..\Source\objloader.cpp ..\Source\ParticleDescriptor.cpp ..\Source\ParticleEmitter.cpp ..\Source\ParticleSystem.cpp ..\Source\Projectile.cpp ..\Source\RailCamera.cpp ..\Source\sceneLoader.cpp ..\Source\ShipModel.cpp ..\Source\SphereModel.cpp ..\Source\StaticCamera.cpp ..\Source\EventManager.cpp ..\Source\main.cpp ..\Source\Model.cpp ..\Source\CubeModel.cpp ..\Source\Renderer.cpp ..\Source\TextureLoader.cpp ..\Source\World.cpp
+         World.cpp
+     1>c:\program files (x86)\windows kits\8.0\include\shared\minwindef.h(130): warning C4005: 'APIENTRY' : macro redefinition
+                 c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\thirdparty\glfw-3.0.4\include\glfw\glfw3.h(92) : see previous definition of 'APIENTRY'
+         TextureLoader.cpp
+         Renderer.cpp
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\renderer.cpp(144): warning C4018: '<' : signed/unsigned mismatch
+         CubeModel.cpp
+         Model.cpp
+         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         main.cpp
+         EventManager.cpp
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\eventmanager.cpp(93): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         StaticCamera.cpp
+         SphereModel.cpp
+         ShipModel.cpp
+         sceneLoader.cpp
+         RailCamera.cpp
+         Projectile.cpp
+         ParticleSystem.cpp
+         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         ParticleEmitter.cpp
+         ParticleDescriptor.cpp
+         objloader.cpp
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\objloader.cpp(34): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\objloader.cpp(45): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : see declaration of 'fscanf'
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\objloader.cpp(53): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : see declaration of 'fscanf'
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\objloader.cpp(57): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : see declaration of 'fscanf'
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\objloader.cpp(62): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : see declaration of 'fscanf'
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\objloader.cpp(67): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : see declaration of 'fscanf'
+         mesh.cpp
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\mesh.cpp(40): warning C4018: '<' : signed/unsigned mismatch
+         FirstPersonCamera.cpp
+         ChairModel.cpp
+         Generating Code...
+         Compiling...
+         Camera.cpp
+         GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         Billboard.cpp
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\billboard.cpp(34): warning C4018: '<' : signed/unsigned mismatch
+         Animation.cpp
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\animation.cpp(65): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\m_perepi\downloads\comp371-project-master\comp371-project-master\experimental2\framework\source\animation.cpp(174): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         GLM: angleAxis function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Bin/Assignment1-Debug.exe" /INCREMENTAL /NOLOGO /LIBPATH:"../ThirdParty/DevIL/DevILx86-1.7.8/lib" /LIBPATH:../ThirdParty/assimp/lib/ /LIBPATH:"../ThirdParty/FreeImage-3170/lib/Win32" /LIBPATH:"../ThirdParty/glew-1.10.0/lib/Release/Win32" /LIBPATH:"../ThirdParty/glfw-3.0.4/lib/Win32/lib-msvc110" DevIL.lib ILU.lib ILUT.lib assimp.lib FreeImage.lib opengl32.lib glew32s.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Bin/Assignment1-Debug.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Bin/Assignment1-Debug.lib" /MACHINE:X86 "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/Animation.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/Billboard.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/Camera.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/ChairModel.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/FirstPersonCamera.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/mesh.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/objloader.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/ParticleDescriptor.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/ParticleEmitter.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/ParticleSystem.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/Projectile.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/RailCamera.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/sceneLoader.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/ShipModel.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/SphereModel.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/StaticCamera.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/EventManager.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/main.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/Model.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/CubeModel.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/Renderer.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/TextureLoader.obj"
+         "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Build/Debug/World.obj"
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\Bin\vc100.pdb'; linking object as if no debug info
+         Assignment1.vcxproj -> C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\/../Bin/Assignment1-Debug.exe
+     1>Done Building Project "C:\Users\m_perepi\Downloads\COMP371-Project-master\COMP371-Project-master\Experimental2\Framework\VS2012\Assignment1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:26.92

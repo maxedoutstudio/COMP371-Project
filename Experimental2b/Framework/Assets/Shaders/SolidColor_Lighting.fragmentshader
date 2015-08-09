@@ -1,0 +1,62 @@
+#version 330 core
+
+
+// Light and Material Uniform Variables
+uniform float materialAmbient; // Ambient Term
+uniform float materialDiffuse; // Diffuse Term
+uniform float materialSpecular; // Specular Term
+uniform float materialExponent; // Specular Exponent
+
+uniform vec3 lightColor;
+uniform vec3 lightAttenuation; // x: Constant  y: Linear  z: Quadratic
+
+
+// Inputs
+in vec4 v_color;		 // vertex color: also diffuse color
+
+in vec3 normal;          // Transformed normal in View Space
+in vec3 eyeVector;       // Vector from the vertex to the Camera in View Space
+in vec4 lightVector;     // Vector from the vertex to the Light in View Space
+						 // Length of lightVector is the distance between light and vertex
+						 // if w = 1: Point light, if w = 0: directional light
+
+// Ouput data
+out vec4 color;
+
+
+void main()
+{
+	// Implment Phong Shading based on the parameters above
+	// Remember that directional light don't have attenuation
+	vec3 light3 = vec3(lightVector.x,lightVector.y,lightVector.z);
+	float distance2 = dot(light3,light3);
+	float distance = sqrt(distance2);
+	light3 = normalize(light3);
+	//vec4 norm4 = vec4(normal, 0);
+	vec4 lightc4 = vec4(lightColor,1.0f);
+	//vec4 lightVecNorm = normalize(lightVector);
+	vec3 eyeV = normalize(eyeVector);
+	float lAttenuation = 1 + (lightAttenuation.x) + (lightAttenuation.y*distance) + (lightAttenuation.z*distance2);
+	lAttenuation = 1.0f/lAttenuation;
+	//color = v_color;
+	vec3 v_color3 = vec3(v_color.x, v_color.y, v_color.z);
+	vec3 light_Reflection = reflect(-light3, normal); //2*(dot(normal, light3)*normal-light3);
+	light_Reflection = normalize(light_Reflection);
+	vec3 AmbEl = v_color3 * materialAmbient;
+	float DifCoef = (dot(normal, light3));
+	DifCoef = min(1.0,DifCoef);
+	DifCoef = max(0.0, DifCoef);
+	float SpecCoef = 0.0;
+	if(DifCoef > 0.0)
+	{
+		SpecCoef = (dot(eyeV,light_Reflection));
+		SpecCoef = min(1.0, SpecCoef);
+		SpecCoef = max(0.0, SpecCoef);
+	}
+	vec3 DifEl =  lightColor * materialDiffuse * DifCoef;
+	vec3 SpecEl =  lightColor * materialSpecular * pow(SpecCoef,materialExponent);
+	vec3 SumDifSpec =  (DifEl + SpecEl);
+	vec3 col3 = AmbEl + lAttenuation * SumDifSpec;
+	color =   vec4(AmbEl+DifEl+SpecEl,1.0f) ;
+	//color = v_color;
+}
