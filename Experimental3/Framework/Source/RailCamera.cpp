@@ -81,8 +81,8 @@ void RailCamera::Update(float dt)
 	//}
 	//float tNorm =  (World::GetInstance()->GetmAnimation(1)->GetmCurrentTime() - World::GetInstance()->GetmAnimation(1)->GetmKeyTime(kFrame))/(World::GetInstance()->GetmAnimation(1)->GetmKeyTime(kFrame+1) - World::GetInstance()->GetmAnimation(1)->GetmKeyTime(kFrame));
 	//float tNorm2 =  (World::GetInstance()->GetmAnimation(0)->GetmCurrentTime() - World::GetInstance()->GetmAnimation(0)->GetmKeyTime(kFrame2))/(World::GetInstance()->GetmAnimation(0)->GetmKeyTime(kFrame2+1) - World::GetInstance()->GetmAnimation(0)->GetmKeyTime(kFrame2));
-	mPosition = vec3(0.0,6.0,-8.0);
-	mLookAt =  World::GetInstance()->mModel[0]->GetPosition()+vec3(0.0, 0.0, 5.0) - mPosition;
+	mPosition = vec3(0.0,6.0,-6.0);
+	mLookAt = World::GetInstance()->mModel[0]->GetPosition() - mPosition + vec3(0,2.5,0);
 	normalize(mLookAt);
 	vec3 sideVector = glm::cross(mLookAt, vec3(0.0f, 1.0f, 0.0f));
 	glm::normalize(sideVector);
