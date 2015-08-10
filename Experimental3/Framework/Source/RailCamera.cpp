@@ -23,6 +23,12 @@ using namespace glm;
 
 RailCamera::RailCamera(glm::vec3 position) :  Camera(), mPosition(position), mLookAt(0.0f, 0.0f, -1.0f), mHorizontalAngle(90.0f), mVerticalAngle(0.0f), mSpeed(5.0f), mAngularSpeed(2.5f)
 {
+	mPosition =  vec3(0,6.0f,-6.0f);
+	mLookAt = vec3(0,0,5.0f);
+	glm::normalize(mLookAt);
+	vec3 sideVector = glm::cross(mLookAt, vec3(0.0f, 1.0f, 0.0f));
+	glm::normalize(sideVector);
+
 }
 
 RailCamera::~RailCamera()
@@ -30,6 +36,7 @@ RailCamera::~RailCamera()
 }
 void RailCamera::Update(float dt)
 {
+<<<<<<< HEAD
 	// Prevent from having the camera move only when the cursor is within the windows
 	EventManager::DisableMouseCursor();
 
@@ -84,33 +91,17 @@ void RailCamera::Update(float dt)
 	mPosition = vec3(0.0,6.0,-6.0);
 	mLookAt = World::GetInstance()->mModel[0]->GetPosition() - mPosition + vec3(0,2.5,0);
 	normalize(mLookAt);
+=======
+	
+	//mPosition+=(glm::vec3(0,0,0.5)*dt);
+	mLookAt = World::GetInstance()->mModel[0]->GetPosition()-  mPosition + vec3(0,0,5.0f);
+	glm::normalize(mLookAt);
+>>>>>>> 81ada3de0ef471e3dee285a6943c339306d3d31c
 	vec3 sideVector = glm::cross(mLookAt, vec3(0.0f, 1.0f, 0.0f));
 	glm::normalize(sideVector);
 
-	// A S D W for motion along the camera basis vectors
-	//if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_W ) == GLFW_PRESS)
-	//{
-	//	mPosition += mLookAt * dt * mSpeed;
-	//}
 
-	//if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_S ) == GLFW_PRESS)
-	//{
-	//	mPosition -= mLookAt * dt * mSpeed;
-	//}
 
-	//if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_D ) == GLFW_PRESS)
-	//{
-	//	mPosition += sideVector * dt * mSpeed;
-	//}
-
-	//if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_A ) == GLFW_PRESS)
-	//{
-	//	mPosition -= sideVector * dt * mSpeed;
-	//}
-	//vec3 *mpos = new vec3;
-	//mpos = Animation::gspos;
-
-	
 	
 }
 

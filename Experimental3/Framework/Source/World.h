@@ -13,6 +13,10 @@
 #include "ParsingHelper.h"
 #include "Billboard.h"
 #include <vector>
+#include "sceneLoader.h"
+#include "Projectile.h"
+#include "PlayerProjectile.h"
+#include "ShipEnnemyModel.h"
 
 class Camera;
 class Model;
@@ -27,8 +31,18 @@ public:
 	World();
 	~World();
 	
+
     static World* GetInstance();
 
+	unsigned int nextProjectile;
+	int droidTextureID;// = TextureLoader::LoadTexture("../Assets/Textures/droid.tga");
+	int MeteorTextureID;// = TextureLoader::LoadTexture("../Assets/Textures/meteor.jpg");
+	int shipTextureID;// = TextureLoader::LoadTexture("../Assets/Textures/ship1.jpg");
+	int projTextureID;
+
+	sceneLoader* meteorScene;
+	sceneLoader* droidScene;
+	sceneLoader* projScene;
 	void Update(float dt);
 	void Draw();
 
@@ -53,8 +67,14 @@ public:
 	float kd ;
 	float ks ;
 	float n ;
+	float spawntime;
 	std::vector<Model*> mModel;
+	std::vector<Projectile*> mProjectile;
+	std::vector<PlayerProjectile*> mPlayerProjectile;
+	std::vector<ShipEnnemyModel*> mShipEnnemyModel;
 	Animation* GetmAnimation(int i);
+	void LoadNextProjectile();
+	void ResetSpawnTime();
     
 private:
     static World* instance;

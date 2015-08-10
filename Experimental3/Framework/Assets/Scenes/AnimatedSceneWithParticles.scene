@@ -64,17 +64,209 @@ key      = "KeyCycle6"  time = 5.0f
 key      = "KeyCycle7"  time = 6.0f
 key      = "KeyCycle8"  time = 7.0f
 key      = "KeyCycle1"  time = 8.0f
+
 [cModel]
 name     = "Ship"
 scaling  = 0.1 0.1 0.1
 position = 0.0 0.0 0.0
+particleSystem = "Fire"
+
+
+
+[pModel]
+name     = "Projectile1"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile2"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile3"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile4"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile5"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile6"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile7"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile8"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile9"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile10"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile11"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile12"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile13"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile14"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile15"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[mpModel]
+name     = "Projectile1"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile2"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile3"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile4"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile5"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile6"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile7"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile8"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile9"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile10"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile11"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile12"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile13"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile14"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile15"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
 
 [eModel]
 name     = "EnemyShip"
 scaling  = 0.1 0.1 0.1
-position = 0.0 0.0 0.0
+position = 0.0 0.0 10.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 15.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 20.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 25.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 30.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 35.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 40.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 45.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 50.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 55.0
 
 [Meteor]
+
 name     = "Meteor"
 scaling  = 0.1 0.1 0.1
 position = 0.0 0.0 0.0
@@ -85,23 +277,4 @@ name     = "Ground"
 scaling  = 100.0 100.0 100.0
 position = 0.0 -50 0.0
 rotation = 1.0 0.0 0.0 90.0
-
-[Cube]
-name     = "Cube"
-scaling  = 1.0 1.0 1.0
-position = 0.0 1.0 0.0
-rotation = 0.0 0.0 1.0 180
-animation = "BackAndForth"
-particleSystem = "Fountain"
-
-[Sphere]
-name     = "Sphere"
-position = 10.0 2.0 0.0
-animation = "CycleAnim"
-particleSystem = "Fire"
-
-[Cube]
-name     = "Cube2"
-scaling  = 0.1 0.1 0.1
-position = 5.0 5.0 -5.0
 

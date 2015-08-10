@@ -101,6 +101,9 @@
     <ClCompile Include="..\Source\MeteorModel.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\PlayerProjectile.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\EventManager.h">
@@ -179,6 +182,9 @@
       <Filter>Source Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\MeteorModel.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlayerProjectile.h">
       <Filter>Source Files\Model</Filter>
     </ClInclude>
   </ItemGroup>

@@ -18,8 +18,15 @@
 #include "Mesh.h"
 #include "Model.h"
 #include"sceneLoader.h"
+<<<<<<< HEAD
 #include <GLFW/glfw3.h>
 #include "EventManager.h"
+=======
+#include "EventManager.h"
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/quaternion.hpp>
+#include <GLFW/glfw3.h>
+>>>>>>> 81ada3de0ef471e3dee285a6943c339306d3d31c
 
 
 // Include GLEW - OpenGL Extension Wrangler
@@ -32,9 +39,17 @@ ShipModel::ShipModel(int shipTextureID,glm::vec3 size) : Model()
 	//Vertex vertexBuffer[] = loadOBJ("../Assets/Model/Chair.obj" );
 	// Create a vertex array
 	mTextureID = shipTextureID;
+<<<<<<< HEAD
 	scene = new sceneLoader("../Assets/Models/Ship1.obj");
 	mRotationAxis = vec3(0.0f, 0.0f, 1.0f);
 
+=======
+	scene = new sceneLoader("../Assets/Models/ship1.obj");
+	mRotationAxis = vec3(0,0,1);
+	firetime = 0.0;
+	fireRate = 0.5;
+	NextProjectle = 0;
+>>>>>>> 81ada3de0ef471e3dee285a6943c339306d3d31c
 	
 }
 
@@ -50,6 +65,7 @@ void ShipModel::Update(float dt)
 	// That will only work if your world transform is correct...
 	// mRotationAngleInDegrees += 90 * dt; // spins by 90 degrees per second
 	//this->SetPosition(this->GetPosition()+(glm::vec3(0,0,0.5)*dt));
+<<<<<<< HEAD
 
 	if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_A) == GLFW_PRESS && mPosition.x < 6.0f)
 	{
@@ -87,7 +103,50 @@ void ShipModel::Update(float dt)
 	
 
 	bullet.Update(dt);
+=======
+	
+	if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_A ) == GLFW_PRESS && mPosition.x < 6)
+	{
+		//bankLeftTime += dt;
+		mPosition+=(glm::vec3(10.0f,0,0)*dt);
+		if(mRotationAngleInDegrees > -45){
+			mRotationAngleInDegrees -= 60 * dt;
+		}
+
+	} else if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_D ) == GLFW_PRESS && mPosition.x > -6)
+	{
+		//bankRightTime += dt;
+		mPosition+=(glm::vec3(-10.0f,0,0)*dt);
+		if(mRotationAngleInDegrees < 45){
+			mRotationAngleInDegrees += 60 * dt;
+		}
+	} else {
+
+		
+		if(mRotationAngleInDegrees > 0.001){
+			mRotationAngleInDegrees -= 23 * dt;
+		} else if (mRotationAngleInDegrees < 0.001){
+			mRotationAngleInDegrees += 23 * dt;
+		}
+		if(mRotationAngleInDegrees > 0){
+			mRotationAngleInDegrees -= 23 * dt;
+		} else if (mRotationAngleInDegrees < 0){
+			mRotationAngleInDegrees += 23 * dt;
+		}
+	}
+	//	bullet.Update(dt);
+>>>>>>> 81ada3de0ef471e3dee285a6943c339306d3d31c
 	Model::Update(dt);
+
+	if(NextProjectle >= 15){
+	NextProjectle-=15;
+	}
+	firetime += dt;
+	if(firetime > fireRate){
+		firetime = 0;
+		World::GetInstance()->mPlayerProjectile[NextProjectle]->Fire(mPosition);
+		NextProjectle++;
+	}
 }
 
 void ShipModel::Draw()
