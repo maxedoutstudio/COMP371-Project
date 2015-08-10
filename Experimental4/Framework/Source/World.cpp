@@ -53,6 +53,14 @@ World::World()
 {
     instance = this;
 
+
+	orbitRotationConstantNumerator = 1;
+	orbitRotationConstantDenominator = 18;
+
+	stretchConstant = 1;
+
+	selfRotationConstant = 10;
+
 	// Setup Camera
 	mCamera.push_back(new FirstPersonCamera(vec3(3.0f, 1.0f, 5.0f)));
 	mCamera.push_back(new StaticCamera(vec3(3.0f, 30.0f, 5.0f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 1.0f, 0.0f)));

@@ -83,12 +83,12 @@ public:
 
 	//Constants for rotation system
 
-	float orbitRotationConstantNumerator = 1;
-	float orbitRotationConstantDenominator = 18;
+	float orbitRotationConstantNumerator;
+	float orbitRotationConstantDenominator;
 
-	float stretchConstant = 1;
+	float stretchConstant;
 
-	float selfRotationConstant = 10;
+	float selfRotationConstant;
     
 private:
     static World* instance;

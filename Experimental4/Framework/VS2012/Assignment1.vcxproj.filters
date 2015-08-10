@@ -104,16 +104,13 @@
     <ClCompile Include="..\Source\PlayerProjectile.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\BackgroundSphere.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
     <ClCompile Include="..\Source\EarthModel.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\MoonModel.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\Background.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\BackgroundSphere.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\SunModel.cpp">
@@ -202,16 +199,13 @@
     <ClInclude Include="..\Source\PlayerProjectile.h">
       <Filter>Source Files\Model</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\BackgroundSphere.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
     <ClInclude Include="..\Source\EarthModel.h">
       <Filter>Source Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\MoonModel.h">
-      <Filter>Source Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\Background.h">
-      <Filter>Source Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\BackgroundSphere.h">
       <Filter>Source Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\SunModel.h">

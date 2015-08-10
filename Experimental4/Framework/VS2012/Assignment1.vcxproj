@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -19,13 +19,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -97,7 +97,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Animation.cpp" />
-    <ClCompile Include="..\Source\Background.cpp" />
     <ClCompile Include="..\Source\BackgroundSphere.cpp" />
     <ClCompile Include="..\Source\Billboard.cpp" />
     <ClCompile Include="..\Source\Camera.cpp" />
@@ -130,7 +129,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Animation.h" />
-    <ClInclude Include="..\Source\Background.h" />
     <ClInclude Include="..\Source\BackgroundSphere.h" />
     <ClInclude Include="..\Source\Billboard.h" />
     <ClInclude Include="..\Source\Camera.h" />
