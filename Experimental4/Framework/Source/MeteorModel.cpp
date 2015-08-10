@@ -51,7 +51,7 @@ void MeteorModel::Update(float dt)
 	vec3 tempPosition = (glm::vec3(0,0,0.5)*dt);
 	float ennemyPositionZ = this->GetPosition().z - tempPosition.z;
 
-	this->SetPosition(this->GetPosition()-(glm::vec3(0,0,5)*dt));
+	this->SetPosition(this->GetPosition() - (glm::vec3(0, 0, World::GetInstance()->selfRotationConstant / 2)*dt));
 
 	//If ennemy position is at -10 for Z position, then bring it at the beginning
 	if(this->GetPosition().z < -8.0f){

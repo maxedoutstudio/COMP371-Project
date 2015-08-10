@@ -55,10 +55,14 @@ void ShipEnnemyModel::Update(float dt)
 	// That will only work if your world transform is correct...
 	// mRotationAngleInDegrees += 90 * dt; // spins by 90 degrees per second
 
-	vec3 tempPosition = (glm::vec3(0,0,0.5)*dt);
+	vec3 tempPosition = (glm::vec3(0,0,0.5));
+
+	//mScaling = vec3(0.1, 0.1, 0.1*World::GetInstance()->stretchConstant);
+	//mScaling += vec3(0, 0, 1)*World::GetInstance()->stretchConstant*dt;
+
 	float ennemyPositionZ = this->GetPosition().z - tempPosition.z;
 
-	this->SetPosition(this->GetPosition()-(glm::vec3(0,0,5)*dt));
+	this->SetPosition(this->GetPosition() - (glm::vec3(0, 0, World::GetInstance()->selfRotationConstant/2)*dt));
 
 	//If ennemy position is at -10 for Z position, then bring it at the beginning
 	if(this->GetPosition().z < -2.0f){

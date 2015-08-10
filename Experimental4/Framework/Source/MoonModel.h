@@ -36,6 +36,8 @@ private:
 		glm::vec2 uv;
 	};
 
+
+
 	unsigned int mVertexArrayID;
 	unsigned int mVertexBufferID;
 	unsigned int uvbuffer;

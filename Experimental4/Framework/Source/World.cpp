@@ -194,12 +194,30 @@ void World::Update(float dt)
 
 	quat rotQuatA = glm::angleAxis(0.0f, vec3(0, 1, 0));
 	quat rotQuatB = angleAxis(180.0f, vec3(0, 1, 0));
-	quat slerpedRotation = slerp(rotQuatA, rotQuatB, -dt / 18);
+	quat slerpedRotation = slerp(rotQuatA, rotQuatB, orbitRotationConstantNumerator * - dt / orbitRotationConstantDenominator);
 	mat4 rotation = mat4_cast(slerpedRotation);
 	lightPosition = rotation*lightPosition;
 
 	// User Inputs
 	spawntime+=dt;
+
+	//Warp speed Activation
+
+	if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_W) == GLFW_PRESS && selfRotationConstant <= 50)
+	{
+		orbitRotationConstantNumerator += 0.1;
+		selfRotationConstant += 1;
+		stretchConstant += 0.1;
+	}
+	else if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_S) == GLFW_PRESS && selfRotationConstant > 10)
+	{
+		orbitRotationConstantNumerator -= 0.1;
+		selfRotationConstant -= 1;
+		stretchConstant -= 0.1;
+	}
+	else {
+		//stretchConstant = 0;
+	}
 
 	// 0 1 2 to change the Camera
 	if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_1 ) == GLFW_PRESS)

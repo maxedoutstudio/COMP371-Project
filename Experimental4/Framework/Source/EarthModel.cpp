@@ -18,7 +18,11 @@
 #include "World.h"
 #include "Mesh.h"
 #include "Model.h"
-#include"sceneLoader.h"
+#include "sceneLoader.h"
+#include "EventManager.h"
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/quaternion.hpp>
+#include <GLFW/glfw3.h>
 
 
 // Include GLEW - OpenGL Extension Wrangler
@@ -45,8 +49,8 @@ EarthModel::~EarthModel()
 
 void EarthModel::Update(float dt)
 {
-	
-	mRotationAngleInDegrees += 10 *dt;
+
+	mRotationAngleInDegrees += World::GetInstance()->selfRotationConstant * dt;
 
 	//bullet.Update(dt);
 	Model::Update(dt);

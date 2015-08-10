@@ -52,7 +52,7 @@ void Projectile::Update(float dt)
 
 	
 
-	this->SetPosition(this->GetPosition()+(aim*10.0f*dt));
+	this->SetPosition(this->GetPosition() + (aim*World::GetInstance()->selfRotationConstant*dt));
 
 	
 	if(this->GetPosition().z < -2.0f){

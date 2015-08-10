@@ -80,6 +80,15 @@ public:
 	Animation* GetmAnimation(int i);
 	void LoadNextProjectile();
 	void ResetSpawnTime();
+
+	//Constants for rotation system
+
+	float orbitRotationConstantNumerator = 1;
+	float orbitRotationConstantDenominator = 18;
+
+	float stretchConstant = 1;
+
+	float selfRotationConstant = 10;
     
 private:
     static World* instance;
