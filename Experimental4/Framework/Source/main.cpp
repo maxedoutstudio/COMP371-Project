@@ -7,18 +7,26 @@
 // Copyright (c) 2014-2015 Concordia University. All rights reserved.
 //
 
+
 #include "Renderer.h"
 #include "World.h"
 #include "EventManager.h"
 #include "Billboard.h"
 #include "TextureLoader.h"
 
+#include <GLFW/glfw3.h>
+
+
 int main(int argc, char*argv[])
 {
+
+	int level = 0;
+	while (level < 2){
+
 	EventManager::Initialize();
 	Renderer::Initialize();
 
-	World world;    
+	World world = World(level);    
     
 	if (argc > 1)
 	{
@@ -35,7 +43,8 @@ int main(int argc, char*argv[])
 //		world.LoadScene("Scenes/StaticScene.scene");
 //		world.LoadScene("Scenes/CoordinateSystem.scene");
 #else
-		world.LoadScene("../Assets/Scenes/AnimatedSceneWithParticles.scene");
+		if (level == 0) { world.LoadScene("../Assets/Scenes/AnimatedSceneWithParticles.scene"); }
+		if (level == 1) { world.LoadScene("../Assets/Scenes/MarsAnimatedSceneWithParticles.scene"); }
 //		world.LoadScene("../Assets/Scenes/AnimatedScene.scene");
 //		world.LoadScene("../Assets/Scenes/StaticScene.scene");
 //		world.LoadScene("../Assets/Scenes/CoordinateSystem.scene");
@@ -43,6 +52,8 @@ int main(int argc, char*argv[])
 	}
 
 	// Main Loop
+
+
 	do
 	{
 		// Update Event Manager - Frame time / input / events processing 
@@ -50,6 +61,14 @@ int main(int argc, char*argv[])
 
 		// Update World
 		float dt = EventManager::GetFrameTime();
+
+		//Different level testing
+
+		if (glfwGetKey(EventManager::GetWindow(), GLFW_KEY_L) == GLFW_PRESS)
+		{
+			break;
+		}
+
 		world.Update(dt);
 
 		// Draw World
@@ -59,6 +78,7 @@ int main(int argc, char*argv[])
 
 	Renderer::Shutdown();
 	EventManager::Shutdown();
-
+	level += 1;
+	}
 	return 0;
 }

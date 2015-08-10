@@ -103,6 +103,7 @@
     <ClCompile Include="..\Source\ChairModel.cpp" />
     <ClCompile Include="..\Source\EarthModel.cpp" />
     <ClCompile Include="..\Source\FirstPersonCamera.cpp" />
+    <ClCompile Include="..\Source\MarsModel.cpp" />
     <ClCompile Include="..\Source\mesh.cpp" />
     <ClCompile Include="..\Source\MeteorModel.cpp" />
     <ClCompile Include="..\Source\MoonModel.cpp" />
@@ -135,6 +136,7 @@
     <ClInclude Include="..\Source\ChairModel.h" />
     <ClInclude Include="..\Source\EarthModel.h" />
     <ClInclude Include="..\Source\FirstPersonCamera.h" />
+    <ClInclude Include="..\Source\MarsModel.h" />
     <ClInclude Include="..\Source\mesh.h" />
     <ClInclude Include="..\Source\meshData.h" />
     <ClInclude Include="..\Source\MeteorModel.h" />
@@ -164,6 +166,8 @@
     <None Include="..\Assets\Scenes\AnimatedScene.scene" />
     <None Include="..\Assets\Scenes\AnimatedSceneWithParticles.scene" />
     <None Include="..\Assets\Scenes\CoordinateSystem.scene" />
+    <None Include="..\Assets\Scenes\MarsAnimatedSceneWithParticles.scene" />
+    <None Include="..\Assets\Scenes\MoonAnimatedSceneWithParticles.scene" />
     <None Include="..\Assets\Scenes\StaticScene.scene" />
     <None Include="..\Assets\Shaders\BlueColor.fragmentshader" />
     <None Include="..\Assets\Shaders\PathLines.fragmentshader" />

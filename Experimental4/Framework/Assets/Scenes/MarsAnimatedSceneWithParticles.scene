@@ -1,0 +1,322 @@
+# This is a comment
+[AnimationKey]
+name     = "KeyForth"
+position = -3.0 1.0 0.0
+rotation =  1.0f 0.0f 0.0f 0.0f
+
+
+[AnimationKey]
+name     = "KeyBack"
+position =  3.0 1.0 0.0
+rotation =  1.0f 0.0f 0.0f 90.0f
+
+[Animation]
+name     = "BackAndForth"
+key      = "KeyForth"     time = 0.0f
+key      = "KeyBack"      time = 2.0f
+key      = "KeyForth"     time = 4.0f
+
+[AnimationKey]
+name     = "KeyCycle1"
+position = 10.0 2.0 0.0
+
+[AnimationKey]
+name     = "KeyCycle2"
+position = 7.07 2.0 7.07
+scaling  = 2.0f 2.0f 2.0f
+
+[AnimationKey]
+name     = "KeyCycle3"
+position = 0.0 2.0 10.0
+
+[AnimationKey]
+name     = "KeyCycle4"
+position = -7.07 2.0 7.07
+scaling  = 2.0f 2.0f 2.0f
+
+[AnimationKey]
+name     = "KeyCycle5"
+position = -10.0 2.0 0.0
+
+[AnimationKey]
+name     = "KeyCycle6"
+position = -7.07 2.0 -7.07
+scaling  = 2.0f 2.0f 2.0f
+
+[AnimationKey]
+name     = "KeyCycle7"
+position = 0.0 2.0 -10.0
+
+[AnimationKey]
+name     = "KeyCycle8"
+position = 7.07 2.0 -7.07
+scaling  = 2.0f 2.0f 2.0f
+
+
+[Animation]
+name     = "CycleAnim"
+key      = "KeyCycle1"  time = 0.0f
+key      = "KeyCycle2"  time = 1.0f
+key      = "KeyCycle3"  time = 2.0f
+key      = "KeyCycle4"  time = 3.0f
+key      = "KeyCycle5"  time = 4.0f
+key      = "KeyCycle6"  time = 5.0f
+key      = "KeyCycle7"  time = 6.0f
+key      = "KeyCycle8"  time = 7.0f
+key      = "KeyCycle1"  time = 8.0f
+
+
+[AnimationKey]
+name     = "MoonCycle1"
+scaling  = 0.25 0.25 0.25
+position = 40 0 0
+
+[AnimationKey]
+name     = "MoonCycle2"
+scaling  = 0.25 0.25 0.25
+position = 0 0 40
+
+[AnimationKey]
+name     = "MoonCycle3"
+scaling  = 0.25 0.25 0.25
+position = -40 0 0
+
+[AnimationKey]
+name     = "MoonCycle4"
+scaling  = 0.25 0.25 0.25
+position = 0 0 -40
+
+
+[Animation]
+name     = "MoonSpin"
+key      = "MoonCycle1"  time = 0.0f
+key      = "MoonCycle2"  time = 9.0f
+key      = "MoonCycle3"  time = 18.0f
+key      = "MoonCycle4"  time = 27.0f
+key      = "MoonCycle1"  time = 36.0f
+
+
+[cModel]
+name     = "Ship"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 0.0
+particleSystem = "Fire"
+
+
+
+[pModel]
+name     = "Projectile1"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile2"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile3"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile4"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile5"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile6"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile7"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile8"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile9"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile10"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile11"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile12"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile13"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile14"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[pModel]
+name     = "Projectile15"
+scaling  = 0.1 0.1 0.1
+position = 5.0 5.0 -4.0
+
+[mpModel]
+name     = "Projectile1"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile2"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile3"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile4"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile5"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile6"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile7"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile8"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile9"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile10"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile11"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile12"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile13"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile14"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+[mpModel]
+name     = "Projectile15"
+scaling  = 0.1 0.1 0.1
+position = 0.0 4.0 56.0f
+
+
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 10.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 15.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 20.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 25.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 30.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 35.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 40.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 45.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 50.0
+[eModel]
+name     = "EnemyShip"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 55.0
+
+[Meteor]
+
+name     = "Meteor"
+scaling  = 0.1 0.1 0.1
+position = 0.0 0.0 0.0
+
+[Mars]
+
+name     = "Mars"
+scaling  = 2.0 2.0 2.0
+position = 0 -45 25
+
+
+[BackgroundSphere]
+
+name     = "BackgroundSphere"
+scaling  = 10.0 10.0 10.0
+position = -30 -20 25
+
+[Sun]
+
+name     = "Sun"
+scaling  = 0.1 0.1 0.1
+position = 0 0 40

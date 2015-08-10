@@ -28,13 +28,16 @@ class ParticleSystem;
 class World
 {
 public:
-	World();
+	World(int level);
 	~World();
 	
 
     static World* GetInstance();
 
 	unsigned int nextProjectile;
+
+	//Texture IDs
+
 	int droidTextureID;// = TextureLoader::LoadTexture("../Assets/Textures/droid.tga");
 	int MeteorTextureID;// = TextureLoader::LoadTexture("../Assets/Textures/meteor.jpg");
 	int shipTextureID;// = TextureLoader::LoadTexture("../Assets/Textures/ship1.jpg");
@@ -43,6 +46,9 @@ public:
 	int earthTextureID;
 	int moonTextureID;
 	int sunTextureID;
+	int marsTextureID;
+
+	//Models
 
 	sceneLoader* meteorScene;
 	sceneLoader* droidScene;
@@ -82,6 +88,8 @@ public:
 	void ResetSpawnTime();
 
 	//Constants for rotation system
+
+	glm::vec3 rotationAxis;
 
 	float orbitRotationConstantNumerator;
 	float orbitRotationConstantDenominator;

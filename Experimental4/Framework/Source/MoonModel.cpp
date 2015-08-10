@@ -37,7 +37,7 @@ MoonModel::MoonModel(int shipTextureID,glm::vec3 size) : Model()
 	mTextureID = shipTextureID;
 	earthScene = World::GetInstance()->earthScene;
 
-	mRotationAxis = vec3(0,1,0);
+	mRotationAxis = World::GetInstance()->rotationAxis;
 	
 }
 
@@ -55,8 +55,8 @@ void MoonModel::Update(float dt)
 	mRotationAngleInDegrees += World::GetInstance()->selfRotationConstant * dt;
 
 	
-	quat rotQuatA = glm::angleAxis(0.0f,vec3(0,1,0));
-	quat rotQuatB = angleAxis(180.0f,vec3(0,1,0));
+	quat rotQuatA = glm::angleAxis(0.0f, mRotationAxis);
+	quat rotQuatB = angleAxis(180.0f, mRotationAxis);
 	quat slerpedRotation = slerp(rotQuatA, rotQuatB, World::GetInstance()->orbitRotationConstantNumerator * -dt / World::GetInstance()->orbitRotationConstantDenominator);
 	mat4 rotation = mat4_cast(slerpedRotation);
 	mPosition = vec3(rotation*vec4(mPosition,1.0f));

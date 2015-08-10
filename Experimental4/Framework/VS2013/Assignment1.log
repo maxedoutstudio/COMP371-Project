@@ -1,48 +1,9 @@
-﻿Build started 8/10/2015 2:56:40 AM.
-     1>Project "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\Assignment1.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         E:\Visual Studio\VC\bin\CL.exe /c /I"../ThirdParty/DevIL/DevILx86-1.7.8/include" /I../ThirdParty/assimp/include /I"../ThirdParty/FreeImage-3170/Source" /I"../ThirdParty/glew-1.10.0/include" /I"../ThirdParty/glfw-3.0.4/include" /I../ThirdParty/glm /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/" /Fd"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Source\World.cpp
-         World.cpp
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(208): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(210): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(214): warning C4305: '-=' : truncation from 'double' to 'float'
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(216): warning C4305: '-=' : truncation from 'double' to 'float'
-         GLM: angleAxis function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
-       Link:
-         E:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Bin/Assignment1-Debug.exe" /INCREMENTAL /NOLOGO /LIBPATH:"../ThirdParty/DevIL/DevILx86-1.7.8/lib" /LIBPATH:../ThirdParty/assimp/lib/ /LIBPATH:"../ThirdParty/FreeImage-3170/lib/Win32" /LIBPATH:"../ThirdParty/glew-1.10.0/lib/Release/Win32" /LIBPATH:"../ThirdParty/glfw-3.0.4/lib/Win32/lib-msvc110" DevIL.lib ILU.lib ILUT.lib assimp.lib FreeImage.lib opengl32.lib glew32s.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Bin/Assignment1-Debug.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Bin/Assignment1-Debug.lib" /MACHINE:X86 "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/Animation.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/Background.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/BackgroundSphere.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/Billboard.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/Camera.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/ChairModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/EarthModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/FirstPersonCamera.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/mesh.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/MeteorModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/MoonModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/objloader.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/ParticleDescriptor.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/ParticleEmitter.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/ParticleSystem.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/PlayerProjectile.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/Projectile.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/RailCamera.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/sceneLoader.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/ShipEnnemyModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/ShipModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/SphereModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/StaticCamera.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/EventManager.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/main.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/Model.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/CubeModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/Renderer.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/SunModel.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/TextureLoader.obj"
-         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/World.obj"
-         Assignment1.vcxproj -> E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Bin/Assignment1-Debug.exe
-     1>Done Building Project "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\Assignment1.vcxproj" (Build target(s)).
+﻿Build started 8/10/2015 4:31:40 PM.
+     1>Project "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2013\Assignment1.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         Assignment1.vcxproj -> E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2013\/../Bin/Assignment1-Debug.exe
+     1>Done Building Project "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2013\Assignment1.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.24
+Time Elapsed 00:00:00.18

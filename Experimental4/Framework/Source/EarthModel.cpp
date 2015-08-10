@@ -37,7 +37,7 @@ EarthModel::EarthModel(int shipTextureID,glm::vec3 size) : Model()
 	mTextureID = shipTextureID;
 	earthScene = World::GetInstance()->earthScene;
 
-	mRotationAxis = vec3(0,1,0);
+	mRotationAxis = World::GetInstance()->rotationAxis;
 	
 }
 
@@ -146,7 +146,7 @@ void EarthModel::Draw()
 		// Set shader constants
 	const float ka = 0.2f;
 	Renderer::CheckForErrors();
-	const float kd = 0.8f;
+	const float kd = 1.0f;
 	Renderer::CheckForErrors();
 	const float ks = 0.2f;
 	Renderer::CheckForErrors();

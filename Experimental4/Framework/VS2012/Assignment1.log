@@ -1,12 +1,12 @@
-﻿Build started 8/10/2015 2:21:28 PM.
+﻿Build started 8/10/2015 4:30:29 PM.
      1>Project "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\Assignment1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"../ThirdParty/DevIL/DevILx86-1.7.8/include" /I../ThirdParty/assimp/include /I"../ThirdParty/FreeImage-3170/Source" /I"../ThirdParty/glew-1.10.0/include" /I"../ThirdParty/glfw-3.0.4/include" /I../ThirdParty/glm /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/" /Fd"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Source\Animation.cpp ..\Source\BackgroundSphere.cpp ..\Source\Billboard.cpp ..\Source\Camera.cpp ..\Source\ChairModel.cpp ..\Source\EarthModel.cpp ..\Source\FirstPersonCamera.cpp ..\Source\mesh.cpp ..\Source\MeteorModel.cpp ..\Source\MoonModel.cpp ..\Source\objloader.cpp ..\Source\ParticleDescriptor.cpp ..\Source\ParticleEmitter.cpp ..\Source\ParticleSystem.cpp ..\Source\PlayerProjectile.cpp ..\Source\Projectile.cpp ..\Source\RailCamera.cpp ..\Source\sceneLoader.cpp ..\Source\ShipEnnemyModel.cpp ..\Source\ShipModel.cpp ..\Source\SphereModel.cpp ..\Source\StaticCamera.cpp ..\Source\EventManager.cpp ..\Source\main.cpp ..\Source\Model.cpp ..\Source\CubeModel.cpp ..\Source\Renderer.cpp ..\Source\SunModel.cpp ..\Source\TextureLoader.cpp ..\Source\World.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"../ThirdParty/DevIL/DevILx86-1.7.8/include" /I../ThirdParty/assimp/include /I"../ThirdParty/FreeImage-3170/Source" /I"../ThirdParty/glew-1.10.0/include" /I"../ThirdParty/glfw-3.0.4/include" /I../ThirdParty/glm /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/" /Fd"E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Source\Animation.cpp ..\Source\BackgroundSphere.cpp ..\Source\Billboard.cpp ..\Source\Camera.cpp ..\Source\ChairModel.cpp ..\Source\EarthModel.cpp ..\Source\FirstPersonCamera.cpp ..\Source\MarsModel.cpp ..\Source\mesh.cpp ..\Source\MeteorModel.cpp ..\Source\MoonModel.cpp ..\Source\objloader.cpp ..\Source\ParticleDescriptor.cpp ..\Source\ParticleEmitter.cpp ..\Source\ParticleSystem.cpp ..\Source\PlayerProjectile.cpp ..\Source\Projectile.cpp ..\Source\RailCamera.cpp ..\Source\sceneLoader.cpp ..\Source\ShipEnnemyModel.cpp ..\Source\ShipModel.cpp ..\Source\SphereModel.cpp ..\Source\StaticCamera.cpp ..\Source\EventManager.cpp ..\Source\main.cpp ..\Source\Model.cpp ..\Source\CubeModel.cpp ..\Source\Renderer.cpp ..\Source\SunModel.cpp ..\Source\TextureLoader.cpp ..\Source\World.cpp
          World.cpp
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(216): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(218): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(222): warning C4305: '-=' : truncation from 'double' to 'float'
-     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(224): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(201): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(203): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(207): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>e:\documents\github\comp371-project\experimental4\framework\source\world.cpp(209): warning C4305: '-=' : truncation from 'double' to 'float'
          GLM: angleAxis function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
          TextureLoader.cpp
          SunModel.cpp
@@ -52,6 +52,7 @@
          MeteorModel.cpp
          mesh.cpp
      1>e:\documents\github\comp371-project\experimental4\framework\source\mesh.cpp(40): warning C4018: '<' : signed/unsigned mismatch
+         MarsModel.cpp
          FirstPersonCamera.cpp
          EarthModel.cpp
          ChairModel.cpp
@@ -73,6 +74,7 @@
          "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/ChairModel.obj"
          "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/EarthModel.obj"
          "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/FirstPersonCamera.obj"
+         "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/MarsModel.obj"
          "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/mesh.obj"
          "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/MeteorModel.obj"
          "E:\Documents\GitHub\COMP371-Project\Experimental4\Framework\VS2012\/../Build/Debug/MoonModel.obj"
@@ -104,4 +106,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:29.74
+Time Elapsed 00:00:27.94

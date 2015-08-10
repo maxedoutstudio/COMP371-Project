@@ -37,7 +37,7 @@ BackgroundSphere::BackgroundSphere(int shipTextureID,glm::vec3 size) : Model()
 	mTextureID = shipTextureID;
 	backgroundScene = World::GetInstance()->earthScene;
 
-	mRotationAxis = vec3(0,1,0);
+	mRotationAxis = World::GetInstance()->rotationAxis;
 	
 }
 

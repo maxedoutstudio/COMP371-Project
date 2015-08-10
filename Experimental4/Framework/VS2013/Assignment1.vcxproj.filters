@@ -119,6 +119,9 @@
     <ClCompile Include="..\Source\SunModel.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\MarsModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\EventManager.h">
@@ -217,6 +220,9 @@
     <ClInclude Include="..\Source\SunModel.h">
       <Filter>Source Files\Model</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\MarsModel.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Assets\Shaders\BlueColor.fragmentshader">
@@ -269,6 +275,9 @@
     </None>
     <None Include="..\Assets\Shaders\Tex_Lighting2.vertexshader">
       <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Scenes\MarsAnimatedSceneWithParticles.scene">
+      <Filter>Resource Files\Scenes</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
